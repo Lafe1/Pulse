@@ -7,6 +7,19 @@
 	.advantages
 		&__item
 			max-width: 30%
+	.carousel
+		button
+			display: none !important
+		.carousel__inner
+			width: 100%
+			img
+				max-width: 100%
+	.catalog
+		&__content
+			justify-content: center
+		&-item
+			margin: 10px
+
 
 @media (max-width: 767px)
 	.container
@@ -45,6 +58,9 @@
 			input
 				margin-bottom: 25px
 				width: 100%
+	.carousel
+		button
+			display: none !important
 
 @media (max-width: 575px)
 	.container
@@ -89,3 +105,25 @@
 		&__icon
 			width: 80%
 			margin-bottom: 20px
+	.catalog
+		&__tabs
+			margin-top: 40px
+			flex-wrap: wrap
+		&__tab
+			margin-bottom: 20px
+	.reviews
+		&-item
+			padding: 0 10px
+			display: flex
+			flex-wrap: wrap
+			text-align: center
+			&__img-wrapper
+				margin-right: 0
+			&__name
+				margin-top: 20px
+	.footer
+		&__info
+			width: 320px
+		&__social
+			&-item
+				margin: 0 5px
